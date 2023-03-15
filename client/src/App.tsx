@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Layout, Row, Col } from "antd";
+import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
+import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Row align="middle">
+          <Col span={10} offset={2}>
+            <h1>Our todolist</h1>
+          </Col>
+          <Col span={12} style={{ textAlign: "right", paddingRight: "200px" }}>
+            <WalletSelector />
+          </Col>
+        </Row>
+      </Layout>
+    </>
   );
 }
 
