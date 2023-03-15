@@ -1,0 +1,8 @@
+---
+profiles:
+  default:
+    private_key: "0xcfb4078e302629fd909852ec9529f6aaf9636fade71d3e1b11c8167a5ecce980"
+    public_key: "0x913a1e81d73a1355bac1f5e0658446363494599ecda04900e5cc77ea3f8f8972"
+    account: 5901163933157673a15962796cae70216b4286eb678e7efb831f6f4ee6b6b6e1
+    rest_url: "https://fullnode.devnet.aptoslabs.com"
+    faucet_url: "https://faucet.devnet.aptoslabs.com"
